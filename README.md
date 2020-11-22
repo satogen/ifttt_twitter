@@ -20,7 +20,7 @@ webhook_url="Webhook呼ぶためのURL"
 ```
 
 Twiiter の設定は、こちらにする
-<img width="564" alt="スクリーンショット 2020-11-22 15 38 32" src="https://user-images.githubusercontent.com/52241300/99897108-2169b300-2cda-11eb-961a-d0a77ac0ac65.png">
+<img width="100%" alt="スクリーンショット 2020-11-22 15 38 32" src="https://user-images.githubusercontent.com/52241300/99897108-2169b300-2cda-11eb-961a-d0a77ac0ac65.png">
 
 ## 使い方
 
