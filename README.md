@@ -10,9 +10,8 @@ IFTTT を用いて Python から Twitter に自動でツイートをするプロ
 
 IFTTT の登録設定をする。
 こちらの記事の Line の箇所を Twitter に変更する。
-https://chasuke.com/python_ifttt/
-
-IFTTT の Webhook 呼ぶための URL をコピー、
+https://chasuke.com/python_ifttt/  
+ IFTTT の Webhook 呼ぶための URL をコピー、
 `.env`ファイルを作成し、下記のように記述をする。
 
 ```
