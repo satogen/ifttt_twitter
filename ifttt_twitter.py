@@ -7,23 +7,23 @@ load_dotenv(verbose=True)
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
+# Webhook呼ぶためのURL
 TARGET_URL = os.environ.get("webhook_url")
-
-default_twiit_value = '新規にデータが更新されました'
-
-# IFTTT_Webhook
+# デフォルトのツイートテキスト
+default_tweet_value = '新規にデータが更新されました'
 
 
-def ifttt_webhook(twiit_value=default_twiit_value):
+def ifttt_webhook(tweet_value=default_tweet_value):
     """
     Webhookを用いて、Twitterにデータを送信
 
     Parameters
     ----------
-    twiit_value : str
+    tweet_value : str
         ツイートする内容
     """
-    payload = {"value1": twiit_value}
+    payload = {"value1": tweet_value}
+    # Webhookでツイートするデータを送信
     response = requests.post(TARGET_URL, data=payload)
     print(response)
 
@@ -31,6 +31,6 @@ def ifttt_webhook(twiit_value=default_twiit_value):
 # 起動時呼び出し
 if __name__ == '__main__':
     print("IFTTT連携開始")
-    # IFTTT_Webhook
+    # ツイートを送信
     ifttt_webhook()
     print("IFTTT連携終了")

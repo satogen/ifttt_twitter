@@ -19,12 +19,18 @@ IFTTT の Webhook 呼ぶための URL をコピー、
 webhook_url="Webhook呼ぶためのURL"
 ```
 
-Twiiter の設定は、こちらにする
+### IFTTT 上の Twiiter の設定
+
+Twieet Text の設定をこちらにする
 <img width="100%" alt="スクリーンショット 2020-11-22 15 38 32" src="https://user-images.githubusercontent.com/52241300/99897108-2169b300-2cda-11eb-961a-d0a77ac0ac65.png">
 
 ## 使い方
 
 下記のコマンドを実行する
+
+```
+$ pip install -r requirements.txt
+```
 
 ```
 $ ifttt_twitter.py
